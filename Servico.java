@@ -5,17 +5,15 @@ public abstract class Servico implements java.io.Serializable {
     private double valorMensal;
     private boolean ativo;
 
-    // Construtor Vazio OBRIGATÓRIO para a biblioteca JSON
     public Servico() {
     }
 
     public Servico(String nome, double valorMensal) {
         this.nome = nome;
         this.valorMensal = valorMensal;
-        this.ativo = false; // Começa inativo por padrão
+        this.ativo = false;
     }
 
-    // Getters e Setters Completos
     public String getNome() { return nome; }
     public void setNome(String nome) { this.nome = nome; } // Novo
 
@@ -30,7 +28,6 @@ public abstract class Servico implements java.io.Serializable {
 class SigaMe extends Servico {
     private String numeroDestino; // Número para onde a chamada será desviada
 
-    // Construtor Vazio para o JSON
     public SigaMe() {
         super();
         this.setNome("Siga-me");
@@ -47,7 +44,6 @@ class SigaMe extends Servico {
 class Secretaria extends Servico {
     private int limiteMensagens; // Limite de mensagens na caixa postal
 
-    // Construtor Vazio para o JSON
     public Secretaria() {
         super();
         this.setNome("Secretária Eletrônica");
