@@ -1,5 +1,4 @@
 // 1. Superclasse de Serviços 
-// Dica: Implementar Serializable é uma boa prática ao trafegar dados em Sistemas Distribuídos
 public abstract class Servico implements java.io.Serializable {
     private String nome;
     private double valorMensal;
@@ -7,7 +6,6 @@ public abstract class Servico implements java.io.Serializable {
 
     public Servico() {
     }
-
     public Servico(String nome, double valorMensal) {
         this.nome = nome;
         this.valorMensal = valorMensal;
