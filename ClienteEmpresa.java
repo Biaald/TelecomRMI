@@ -26,8 +26,8 @@ public class ClienteEmpresa {
     public String getCnpj() { return cnpj; }
     public void setCnpj(String cnpj) { this.cnpj = cnpj; }
 
-    public String getNome() { return nomeFantasia; }
-    public void setNome(String nome) { this.nomeFantasia = nomeFantasia; }
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
 
     public List<Linha> getLinhasCorporativas() { return linhasCorporativas; }
     public void setLinhasCorporativas(List<Linha> linhasCorporativas) { this.linhasCorporativas = linhasCorporativas; }
