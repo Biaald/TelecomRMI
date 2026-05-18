@@ -5,16 +5,16 @@ import java.util.List;
 // Agregação 2: um cliente corporativo possui ("tem-um") várias linhas telefônicas.
 public class ClienteEmpresa {
     private String cnpj;
-    private String nomeFantasia;
+    private String nome;
     private List<Linha> linhasCorporativas;
 
     public ClienteEmpresa() {
         this.linhasCorporativas = new ArrayList<>();
     }
 
-    public ClienteEmpresa(String cnpj, String nomeFantasia) {
+    public ClienteEmpresa(String cnpj, String nome) {
         this.cnpj = cnpj;
-        this.nomeFantasia = nomeFantasia;
+        this.nome = nome;
         this.linhasCorporativas = new ArrayList<>();
     }
 
@@ -26,8 +26,8 @@ public class ClienteEmpresa {
     public String getCnpj() { return cnpj; }
     public void setCnpj(String cnpj) { this.cnpj = cnpj; }
 
-    public String getNomeFantasia() { return nomeFantasia; }
-    public void setNomeFantasia(String nomeFantasia) { this.nomeFantasia = nomeFantasia; }
+    public String getNome() { return nomeFantasia; }
+    public void setNome(String nome) { this.nomeFantasia = nomeFantasia; }
 
     public List<Linha> getLinhasCorporativas() { return linhasCorporativas; }
     public void setLinhasCorporativas(List<Linha> linhasCorporativas) { this.linhasCorporativas = linhasCorporativas; }
